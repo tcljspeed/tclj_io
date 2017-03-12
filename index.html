@@ -1,0 +1,145 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='description' content=''/>
+		<meta name='keywords' content=''/>
+		<meta name='robort' content='all'/>
+		<meta name='autor' content='Hank'/>
+		<title>作品</title>
+		<link rel="stylesheet" type="text/css" href=""/>
+		<script src="jquery-2.0.0.min.js"></script>
+		<style type="text/css">
+		body{font-family: "微软雅黑";overflow-x: hidden;}
+		*{margin: 0;padding: 0;}
+		#wrap{width: 350px;border: 12px solid #EEE;border-radius: 10px;margin: 20px auto;padding: 5px;color:#fff;}
+		ul,li{list-style-type: none;}
+		li{width: 100%; min-height:40px;margin-bottom: 1px;overflow: hidden;cursor: pointer;text-indent: 10px;}
+		li span{display: block;width: 100%;height: 40px;background: #2CCDBA;line-height: 40px;font-size: 16px;}
+		li p{width: 100%;height: 35px;margin-top: 1px;/*background: #226288;*/line-height: 30px;font-size: 14px;}
+		li a{height: 35px;line-height: 30px;font-size: 14px;text-decoration: none;color: #0a8cd2;}
+		/*li p:hover a{text-decoration: underline;}*/
+		li a{ display:block;/* padding:5px 8px;*/transition:all 0.6s;border-radius:5px;}
+		li a:hover{ text-indent:25px;border-radius:5px;color: #fff;text-shadow:0 2px 1px #169BAD;background-color: #169BAD;*background-color:#51a351;background-image:-moz-linear-gradient(top,#62c462,#51a351);background-image:-webkit-gradient(linear,0 0,0 100%,from(#62c462),to(#51a351));background-image:-webkit-linear-gradient(top,#62c462,#51a351);background-image:-o-linear-gradient(top,#62c462,#51a351);background-image:linear-gradient(to bottom,#2CCDBA,#169BAD););background-repeat:repeat-x;border-color:#51a351 #51a351 #387038;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462',endColorstr='#ff51a351',GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);text-decoration:none;}
+		li a i{color: red;text-indent: 20px;}
+		em{font-size: 16px;font-style: normal;}
+		#note{padding: 0 20px;display: none;position: absolute;right: 0;top: 0;font-size: 12px;}
+		#note span{text-shadow: -1px 2px 3px #000;}
+		#web_loading{
+			position: absolute;top: 0;left: 0;
+		z-index:99999;
+		width:100%;
+		}
+		#web_loading div{
+		width:0;
+		height:2px;
+		background:#FF9F15;
+		}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+               var title=$('#wrap ul li span'); 
+			   var content=$('#wrap ul li div');
+			   
+			   title.bind('click',function(){
+
+				   content.eq($(this).parent().index()).slideToggle();
+				   
+			   });
+            });
+		
+		
+		
+		//jQuery(document).ready(function(){
+			/*
+		    jQuery("#web_loading div").animate({width:"100%"},1000,function(){
+		        setTimeout(function(){
+		        	jQuery("#web_loading div").fadeOut(500,function(){
+		        		var obj = $('#note').show().get(0);
+		        		jiggleit(obj);
+		        	});
+		        },200);
+		    });
+			*/
+		//});
+		/*
+		function jiggleit(obj){
+			var flag = 200000;
+			while(flag){
+				setTimeout(function(){obj.style.top = ((parseInt(obj.style.top)==-1)? 1 : -1)+'px'},80);
+				flag--;
+			}
+
+		}
+		window.onload = function(){
+			var oSpan = document.getElementsByTagName('span');
+			var oNote = document.getElementById('note');
+			for(var i = 0;i < oSpan.length;i++){
+				oSpan[i].timer = null;
+				oSpan[i].onclick= function(){
+					var objL = this.parentNode;
+					var oLis = document.getElementsByTagName('li');
+					if(objL.className == 'curr'){
+						for(var i = 0;i < oLis.length;i++){
+							oLis[i].className = '';
+							buffer(oLis[i],{'height':40});
+						}
+						return;
+					}
+					resetHeight(this);
+				};
+			}
+		}
+		function resetHeight(obj){
+			var objL = obj.parentNode;
+			var oLis = document.getElementsByTagName('li');
+			for(var i = 0;i < oLis.length;i++){
+				oLis[i].className = '';
+				buffer(oLis[i],{'height':40});
+			}
+			objL.className = 'curr';
+			var tmp = objL.getElementsByTagName('p').length * 36 + 40;
+			buffer(objL,{'height':tmp});
+		}
+		*/
+		</script>
+	</head>
+	<body>
+		<div id="web_loading"><div></div></div>
+		<p id="note">作品</p>
+		<div id="wrap">
+			<ul>
+				<li>
+					<span>常用效果 (7)</span>
+                    <div style="display:none;">
+                        <p><a href="a/Tab选项卡切换/index.html" target="_blank"><em>①</em> Tab选项卡切换</a></p>
+                        <p><a href="a/倒计时/index.html" target="_blank"><em>②</em> 倒计时</a></p>
+                        <p><a href="a/登陆页面/登陆页面1/index.html" target="_blank"><em>③</em> 悬浮登陆页面</a></p>
+                        <p><a href="a/登陆页面/登陆页面2/index.html" target="_blank"><em>④</em> 切换方式登陆页面</a></p>
+                        <p><a href="a/手风琴/index.html" target="_blank"><em>⑤</em> 手风琴效果</a></p>
+                        <p><a href="a/轮播图/index.html" target="_blank"><em>⑥</em> 轮播图效果</a></p>
+                        <p><a href="a/王者荣耀导航菜单/index.html" target="_blank"><em>⑦</em> 导航菜单</a></p>
+                    </div>
+				</li>
+				<li>
+					<span>js小试牛刀 (4)</span>
+                    <div style="display:none;">
+                        <p><a href="a/门户网站/index.html" target="_blank"><em>①</em> 门户网站</a></p>
+                        <p><a href="a/表单验证/index.html" target="_blank"><em>②</em>表单验证</a></p>
+                        <p><a href="a/购物车/index.html" target="_blank"><em>③</em> 购物车效果</a></p>
+                        <p><a href="a/淘宝样式/index.html" target="_blank"><em>④</em> 淘宝样式</a></p>
+                    </div>
+				</li>
+				<li>
+					<span>项目实战 (2)</span>
+                    <div style="display:none;">
+                        <p><a href="a/企业后台管理/index.html" target="_blank"><em>①</em> 后台管理系统</a></p>
+                        <p><a href="a/驴妈妈/index.html" target="_blank"><em>②</em> 驴妈妈</a></p>					
+                    </div>
+				</li>
+
+			</ul>
+		</div>
+	</body>
+</html>

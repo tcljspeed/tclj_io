@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<script src="js/app.js"></script>
+</head>
+<body>
+	<table class="tab_container">
+		<thead class="tab_header">
+        	<tr>
+            	<th>
+                	<input class="check checkall" id="checkbox_top" type="checkbox"/><label for="checkbox_top">全选</label>
+                </th>
+                <th><span>商品信息</span></th>
+                <th><span>单价</span></th>
+                <th><span>数量</span></th>
+                <th><span>金额</span></th>
+                <th><span>操作</span></th>              
+            </tr>
+        </thead>
+        <tbody class=tab_body>
+        	<!--第一行商品-->
+        	<tr class="shop_row">           	
+            	<td class="checkbox"><input class="check" type="checkbox"/></td>
+                <td class="goods">
+                	<img src="images/goods1.jpg"/>
+                    <div class=goods_name><a href="#">VIP-jQuery即学即用（双色）</a></div></td>
+                <td class="price">¥<span>46.00</span></td>
+                <td class="count">
+                	<span class="reduce"></span>
+                    <input class="count-input" type="text" value="1"/>
+                    <span class="add">+</span></td>
+                <td class="totalPrice">¥<span>46.00</span></td>
+                <td class="operation">
+                	<a href="#">移入收藏夹</a><br>
+                    <a class="row_det" href="#">删除</a></td>
+            </tr>
+            
+            <!--第二行商品-->
+            <tr class="shop_row">           	
+            	<td class="checkbox"><input class="check" type="checkbox"/></td>
+                <td class="goods">
+                	<img style="float:left" src="images/goods2.jpg"/>
+                    <div class="goods_name"><a href="#">2016夏丽人达芙妮舒适中跟防水台孕妇牛筋底防滑粗坡跟妈妈女凉鞋</a></div></td>
+                <td class="price">¥<span>368.00</span></td>
+                <td class="count">
+                	<span class="reduce"></span>
+                    <input class="count-input" type="text" value="1"/>
+                    <span class="add">+</span></td>
+                <td class="totalPrice">¥<span>368.00</span></td>
+                <td class="operation">
+                	<a href="#">移入收藏夹</a><br>
+                    <a class="row_det" href="#">删除</a></td>
+            </tr>
+            
+            <!--第三行商品-->
+            <tr class="shop_row">           	
+            	<td class="checkbox"><input class="check" type="checkbox"/></td>
+                <td class="goods">
+                	<img style="float:left" src="images/goods3.jpg"/>
+                    <div class="goods_name"><a href="#">日系秋冬新款复古纯色套头衫百搭针织衫青年圆领潮宽松毛衣小外套</a></div></td>
+                <td class="price">¥<span>175.00</span></td>
+                <td class="count">
+                	<span class="reduce"></span>
+                    <input class="count-input" type="text" value="1"/>
+                    <span class="add">+</span></td>
+                <td class="totalPrice">¥<span>175.00</span></td>
+                <td class="operation">
+                	<a href="#">移入收藏夹</a><br>
+                    <a class="row_det" href="#">删除</a></td>
+            </tr>
+            
+            <!--第四行商品-->
+            <tr class="shop_row">           	
+            	<td class="checkbox"><input class="check" type="checkbox"/></td>
+                <td class="goods">
+                	<img style="float:left" src="images/goods4.jpg"/>
+                    <div class="goods_name"><a href="#">【移动官方现货】中移动 Apple/苹果 iPhone 7 Plus 国行原封手机</a></div></td>
+                <td class="price">¥<span>6058.00</span></td>
+                <td class="count">
+                	<span class="reduce"></span>
+                    <input class="count-input" type="text" value="1"/>
+                    <span class="add">+</span></td>
+                <td class="totalPrice">¥<span>6058.00</span></td>
+                <td class="operation">
+                	<a href="#">移入收藏夹</a><br>
+                    <a class="row_det" href="#">删除</a></td>
+            </tr>
+        </tbody>
+	</table>
+    
+    <!--商品底部栏-->
+    <div class="footer">
+    	<div class="foot_check">
+    	    <label for="checkbox">全选</label>
+	        <input type="checkbox" class="check checkall" id="checkbox"/>        
+        </div>	
+        <div class="foot_dele">
+        	<ul>
+            	<li><a class="bottom_det" href="#">删除</a></li>
+                <li><a href="#">清除失效宝贝</a></li>
+                <li><a href="#">移入收藏夹</a></li>           
+            </ul>
+        </div>
+        <button type="button" class="settle">结 算</button>
+        <div class="total_list">
+        	已选商品<span id="goods_total">0</span>件
+        	<span class="arrow total_up">︽ &nbsp;</span>
+            <span class="arrow total_down hidden">︾ &nbsp;</span>
+            <span> &nbsp;合计（不含运费）: </span>
+            ¥<span id="price_total">0.00</span>
+        </div>
+        <div class="selected-view">
+        	<div class="show-shoplist">
+                     
+            </div>
+        	<span class="arr"><span>◆</span></span>
+        </div>
+    </div>
+    
+</body>
+</html>

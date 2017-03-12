@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+button,input{
+	z-index:6;
+}
+table {
+	z-index:5;
+    border-collapse: collapse;
+    border-spacing: 100px;;
+    border: 0;
+	text-align:center;
+	width:990px;
+	margin:50px auto;
+}
+table a{
+	text-decoration:none;
+	color:RGB(22,22,22);
+}
+thead{
+	padding:10px 0;
+	background:#CCC;
+}
+tbody tr{
+	height:122px;
+	background:RGB(255,248,225);
+	transition:background 800ms;
+}
+tbody tr:hover{
+	background:#FCC;
+}
+th{
+	padding:15px 0;
+}
+th, td{
+	border:1px solid #EEE;
+}
+
+/************************************************/
+.checkbox{
+	width:80px;
+}
+.check{
+	width:15px;
+	height:15px;
+	color:red;
+}
+.goods img{
+	float:left;
+}
+.goods_name{
+	margin-top:30px;
+	margin-left:10px;
+}
+table a:hover{
+	text-decoration:underline;
+	color:#F06;
+}
+.price, .count, .totalPrice, .operation{
+	width:100px;
+}
+.price{
+	font-size:14px;
+	font-weight:600;
+}
+.count-input{
+	width:40px;
+}
+.count-input, .reduce, .add{
+	float:left;
+	display:inline-block;
+	text-align:center;
+	line-height:20px;	
+}
+.reduce{
+	margin-left:10px;
+}
+.reduce, .add{
+	background:#CCC;
+	width:15px;
+	height:24px;
+}
+.reduce:hover{
+	cursor:pointer;
+	background:#F36;
+}
+.add:hover{
+	cursor:pointer;
+	background:#F36;
+}
+.totalPrice{
+	color:#F06;
+	font-weight:600;
+}
+/***********************************************/
+.footer{
+	position:relative;
+	z-index:0;
+	background:#CCC;
+	width:990px;
+	height:50px;
+	border:1px solid #CCC;
+	margin:20px auto;
+}
+.foot_check{
+	float:left;
+	height:50px;
+	padding-left:20px;
+	padding-top:14px;
+}
+.foot_check input{
+	float:left;
+	width:16px;
+	height:16px;
+	margin-top:2px;
+	margin-right:4px;
+}
+.foot_check label{
+	font-size:14px;
+}
+.settle{
+	z-index:6;
+	float:right;
+	height:52px;
+	width:120px;
+	background:RGB(255,68,0);
+	border:0;
+	margin-top:-1px;
+	font-size:20px;
+	font-weight:600;
+	cursor:pointer;
+}
+.foot_dele, .total_list{
+	list-style-type:none;
+	height:50px;
+	padding-top:18px;
+	padding-left:30px;
+	font-size:12px;
+}
+.foot_dele{
+	float:left;
+}
+.total_list{
+	float:right;
+}
+.foot_dele li{
+	display:inline-block;
+	width:100px;
+	float:left;
+}
+.foot_dele a{
+	text-decoration:none;
+	cursor:pointer;
+	color:RGB(22,22,22)
+}
+.foot_dele a:hover{
+	text-decoration:underline;
+	color:#F06;
+}
+.total_list{
+	float:right;
+	font-size:14px;
+	font-wight:400;
+}
+#goods_total,#price_total{
+	font_weight:500;
+	font-size:22px;
+	color:RGB(255,68,0);
+}
+.total_list .arrow{
+	position:relative;
+	cursor:pointer;
+}
+.arrow:hover{
+	color:red;
+}
+.total_up{
+	top:-3px;
+}
+.total_down{
+	top:3px;
+}
+.hidden{
+	display:none;
+}
+.footer .selected-view{
+	position:absolute;
+	display:none;
+	width:990px;
+	border:1px solid RGB(190,190,190);
+	z-index:10;
+	background:#FFF;
+	bottom:50px;
+	height:auto;
+	left:-1px;
+}
+.show .selected-view{
+	display:block;
+}
+.footer .selected-view .arr span {
+    color: #ffffff;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+}
+.footer .selected-view .arr {
+    font-size: 16px;
+    line-height: 100%;
+    color:#c8c8c8;
+    position: absolute;
+    right: 330px;
+    bottom: -9px;
+}
+.show-shoplist div{
+	position:relative;
+	float:left;
+	margin:20px;
+}
+.show-shoplist div span{
+	position:absolute;
+	width:60px;
+	height:20px;
+	line-height:20px;
+	top:0;
+	right:0;
+	font-size:10px;
+	text-align:center;
+	background:#000;
+	opacity:0.6;
+	color:#FFF;
+	display:none;
+}
+.show-shoplist div:hover .shop-shoplist div span{
+	display:inline;
+}
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>倒计时</title>
+<style type="text/css">
+	h3 span{color:red;}
+	.container{width:600px;margin:100px auto;}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h3>现在时间为:<span class="now_time"></span></h3>
+    <h3>距离2017年结束还有: <span class="last_day"></span> 天</h3>
+    <h3>双11秒杀倒计时:<span class="countdown"></span></h3>
+</div>
+
+<script>
+	function checkTime(i){
+		if(i<10){
+			i="0"+i;
+		}
+		return i;
+	}
+	
+	window.onload=function(){	
+		var now_time=document.getElementsByClassName("now_time")[0];	
+		var last_day=document.getElementsByClassName("last_day")[0];
+		var countdown=document.getElementsByClassName("countdown")[0];
+		function getTime(myDate){		//从当前时间对象中获取每个细节时间
+			    myYear=myDate.getFullYear();		//年
+				myMonth=myDate.getMonth();			//月
+				myDay=myDate.getDate();				//日
+				myWeek=myDate.getDay();
+				myHours=myDate.getHours();
+				myMinus=checkTime(myDate.getMinutes());
+				mySeconds=checkTime(myDate.getSeconds());	
+		}
+		function showTime(){		//显示现在时间
+			var myDate=new Date();		//当前时间对象
+			getTime(myDate);		
+			var weeks=new Array(7);
+			weeks[0]="日";
+			weeks[1]="一";
+			weeks[2]="二";
+			weeks[3]="三";
+			weeks[4]="四";
+			weeks[5]="五";
+			weeks[6]="六";
+			var times=myYear+'年'+(myMonth+1)+'月'+myDay+'日'+" "+"星期"+weeks[myWeek]+" "+myHours+":"+myMinus+":"+mySeconds;		
+			now_time.innerHTML=times;
+			setTimeout(showTime,500);
+		}
+		function leftTime(){		//显示距离下一年剩余时间
+			var date=new Date();	//当前时间对象
+			var now=date.getTime();
+			var last_time=new Date("2018,1,1");
+			left_time=Math.ceil((last_time-now)/(24*60*60*1000));
+			last_day.innerHTML=left_time;
+		}
+		function countDown(){
+			var now_time1=new Date();
+			var goalTime=new Date("2017,11,11");
+			//剩余秒数
+			count_time=parseInt((goalTime-now_time1)/1000);
+			if(count_time<0){
+				countdown.innerHTML="秒杀结束";
+				clearTimeout(countDown());
+			}
+			//剩余的天数
+			d=parseInt(count_time/(24*60*60));
+			h=parseInt(count_time/(60*60)%24);	
+			m=parseInt(count_time/60%60);
+			s=parseInt(count_time%60)
+			countdown.innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";		
+			setTimeout(countDown,500);
+		}
+		leftTime();
+		showTime();
+		countDown();		
+	}
+</script>
+</body>
+</html>

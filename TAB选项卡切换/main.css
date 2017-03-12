@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+ul{list-style-type:none;}
+a{text-decoration:none; color:#000}
+.tab_Container{
+	width:498px;
+	height:200px;
+	border:1px solid #ccc;
+	margin:50px auto;
+	font-size:16px;
+	overflow:hidden;
+}
+.tab_tit{
+	position:relative;
+	width:500px;
+	height:50px;
+	background:#eee;
+}
+.tab_tit ul{
+	position:absolute;
+	width:501px;
+	top:0;
+	left:-1px;	
+}
+.tab_tit ul li{
+	float:left;
+	width:98px;
+	height:49px;
+	line-height:50px;
+	text-align:center;
+	padding:0 1px;
+	border-bottom:1px solid #CCC;
+}
+/******************************************鼠标滑过或点击之后的***********/
+.tab_tit ul li.select{
+	padding:0;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #FFF;
+	background:#FFF;
+	font-weight:600;
+}
+.tab_con div{
+	padding:30px 0;
+	display:none;
+}
+.tab_con li{
+	margin-left:15px;
+	float:left;
+	width:234px;
+	height:40px;
+	overflow:hidden;
+	word-break:break-all;
+	white-space:nowrap;
+	font-size:14px;
+}
+.tab_con li a:hover{
+	color:red;
+	text-decoration:underline;
+}
+
+/***************************************************************************/
+.img_container{
+	width:920px;
+	height:160px;
+	margin:50px auto;
+	border:1px solid #000;
+}
+.img_container ul{
+	height:160px;
+}
+.img_container li{
+	width:220px;
+	height:160px;
+	float:left;
+	margin-right:10px;
+	position:relative;
+	overflow:hidden;
+}
+.img_container li div{
+	width:220px;
+	height:50px;
+	line-height:50px;
+	position:absolute;
+	left:0;
+	bottom:-50px;
+	text-align:center;
+	background:RGBA(0,0,0,0.5);
+	color:#FFF;
+	display:none;
+}

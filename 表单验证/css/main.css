@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;padding: 0}
+.fl{float:left;}
+.fr{float:right;}
+.titlebar h3{width:192px;margin:auto;margin-top:80px;margin-left:600px;font-size:30px;border:solid red 1px;
+					background-color:#399; text-align:center;}
+#myform{width:650px;height:250px;margin:10px auto;padding: 50px 20px 20px 20px; border:solid red 1px;}
+#myform div {height:24px;margin-bottom: 10px;}
+label input{
+	height:20px;
+}
+#count{font-size: 8px;margin-left: 106px;visibility: hidden;}
+#em{background:orange;width:153px;margin-left: 106px;height:18px;}
+em{opacity: 0.2;font-size: 18px;height:18px;}
+#first_emchild{background: orange;opacity: 1.0;}
+.surepassword{padding-left: 0px}
+p{display:inline;font-size: 10px}
+label span{
+	display:inline-block;
+	width:96px;
+	text-align:center;	
+}
+.username, .password, .surepassword{
+	font-size: 20px;
+}
+.registered{
+	display:inline-block;
+	width:110px;
+	height:40px;
+	background:#F60;
+	margin-left:105px;
+	margin-top:30px;
+	font-size:14px;
+	cursor:pointer;
+	border:0;
+	border-radius:3px;
+}
+ 
+   	
+/**.msg .ati{background:url(../timg.jpg) no-repeat 0-128px}**/
+.active{background:orange; opacity:1}
+.disactive{opacity:0.2}
+.success{
+	color:#3F3;
+}

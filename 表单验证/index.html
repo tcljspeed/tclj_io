@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表单验证</title>
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="formsure.js"></script>
+</head>
+<body>
+    <div class="titlebar">
+        <h3>会员注册</h3>
+    </div>
+    <form id="myform">
+        <div class="username">
+            <label>
+                <span >用户名:</span>
+                <input type="text"></input></label>
+            <p class="msg"><i class="ati"></i>请输入用户名</p>
+        </div>
+        
+        <div id="count">0个字符</div>
+        
+        <!--密码栏-->
+        <div class="password">
+            <label>
+                <span>密&nbsp; 码:</span>
+                <input type="text"></input></label>
+            <p>请输入6-16个字符密码</p>
+        </div>
+        
+        <!--密码强度-->
+        <div id="em">
+            <em id="first_emchild">弱</em> &nbsp; <em>中</em> &nbsp;<em>强</em>
+        </div>
+        
+       	<!--确认密码-->
+        <div class="surepassword">
+            <label>
+                <span>确认密码:</span>
+                <input type="text" disabled="" ></input></label>
+             <p>请再次输入密码</p>
+        </div>
+        
+        <input class="registered" type="submit" value="同意协议并注册"/>
+    </form>
+</body>
+</html>

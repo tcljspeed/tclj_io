@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+.show_container{
+	margin: 150px auto;
+	width:600px;
+	height:350px;
+	overflow:hidden;
+	position: relative;
+	border:1px solid #000;
+	z-index:1;
+}
+
+.img_list{
+	width:4200px;
+	height:300px;
+	position:absolute;
+	z-index:1;
+}
+
+.show_img{
+	float:left;
+	width:600px;
+	height:350px;
+}
+.arrow{
+	position: absolute;
+	display:block;
+	width:50px;
+	height: 50px;	
+	background:RGBA(0,0,0,0.4);
+	line-height:50px;
+	text-align:center;
+	font-size:36px;
+	font-weight:800;
+	z-index:6;
+	text-decoration:none;
+	color:#000;
+}
+.arrow:hover{
+	background:RGBA(0,0,0,0.6);
+	cursor:pointer;
+}
+.left_arrow{
+	left:0;
+	top:45%;
+}
+.right_arrow{
+	right:0;
+	top:45%;
+}
+#img_cir .on{
+	background:RGBA(0,0,0,0.8);
+}
+#img_cir{
+	position:absolute;
+	bottom:10px;
+	right:40px;
+	z-index:7;	
+}
+#img_cir span{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background:RGBA(0,0,0,0.4);
+	border-radius:50%;
+}
+#img_cir span:hover{
+	background:RGBA(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+

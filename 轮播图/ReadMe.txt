@@ -1,0 +1,1 @@
+1.在css中定义了图片列表div的left值，在js中用元素.style.left取不到left值，而直接在html内联定义style=left:-600的话在js中却能通过.style.left取到值

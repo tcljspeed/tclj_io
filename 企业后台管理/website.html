@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<title>无标题文档</title>
+</head>
+
+<body>
+	<div class="container">
+    	<div style="margin-left:100px;margin-bottom:30px;margin-top:20px;" id="tab_list">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">站点配置</a></li>
+                <li role="presentation"><a href="#">验证配置</a></li>
+                <li role="presentation"><a href="#">上传配置</a></li>
+            </ul>
+        </div>
+        <!--站点配置-->
+    	<form class="form-horizontal">
+        	<div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">网站名称</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="填写网站名称">
+                </div>
+        	</div><br />
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">网站域名</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="填写网站域名">
+                </div>
+        	</div><br />
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">网站关键字</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="填写网站关键字">
+                </div>
+        	</div><br />
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">网站描述</label>
+                <div class="col-sm-8">
+                	<textarea class="form-control" rows="3"></textarea>
+                </div>
+        	</div><br />
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">网站统计</label>
+                <div class="col-sm-8">
+                	<textarea class="form-control" rows="4"></textarea>
+                </div>
+        	</div><br />
+            <button class="btn btn-info" style="margin-left:200px;">保存</button>
+        </form>
+        <!--验证配置-->
+        <form class="form-horizontal" style="display:none">
+        	<div class="form-group">       
+                <label for="inputEmail3" class="col-sm-2 control-label">是否关闭网站</label>
+                <label class="radio-inline" style="margin-left:15px">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+                </label>
+           </div><br />
+           <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">网站提示信息</label>
+                <div class="col-sm-8">
+                	<textarea class="form-control" rows="4"></textarea>
+                </div>
+        	</div><br />
+            <div class="form-group">       
+                <label for="inputEmail3" class="col-sm-2 control-label">开启注册验证码</label>
+                <label class="radio-inline" style="margin-left:15px">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+                </label>
+           </div><br />
+           <div class="form-group">       
+                <label for="inputEmail3" class="col-sm-2 control-label">开启登陆验证</label>
+                <label class="radio-inline" style="margin-left:15px">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+                </label>
+           </div><br />
+           <div class="form-group">       
+                <label for="inputEmail3" class="col-sm-2 control-label">开启评论验证</label>
+                <label class="radio-inline" style="margin-left:15px">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 是
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 否
+                </label>
+           </div><br />
+           <div class="form-group">       
+                <label for="inputEmail3" class="col-sm-2 control-label">网站风格</label>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    经典蓝 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">酷炫黑</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">桃花粉</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">棉花白</a></li>
+                    </ul>
+                </div>      
+           </div><br />
+           <button class="btn btn-info" style="margin-left:200px;">保存</button>
+        </form>
+        <!--上传配置-->
+        <form style="display:none">
+            <div class="form-group">       
+                <label for="inputEmail3" class="col-sm-2 control-label">是否允许使用缩略图</label>
+                <label class="radio-inline" style="margin-left:15px">
+                <input type="radio" name="suo" id="inlineRadio1" value="option1"> 是
+                </label>
+                <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="suo" value="option2"> 否
+                </label>
+            </div><br />
+        	<div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">允许上传最大尺寸</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="填写允许上传最大尺寸">
+                </div>
+        	</div><br /><br />            
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">选择上传的文件</label>
+                <div class="col-sm-8">
+                	<input type="file" id="exampleInputFile">
+                </div>               
+            </div><br />
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">上传地址</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="填写上传地址">
+                </div>
+        	</div><br /> <br />
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">允许上传的类型</label>
+                <div class="col-sm-8">
+                	<textarea class="form-control" rows="4"></textarea>
+                </div>
+        	</div><br /><br /><br /><br /><br /><br />        
+        	<button class="btn btn-info" style="margin-left:180px;">保存</button> 
+        </form>        
+    </div>
+    
+<script>
+	$(document).ready(function(e) {
+		$('#tab_list li').bind('click',function(){
+			var _index=$(this).index();
+			$(this).addClass("active").siblings('li').removeClass("active");
+			$('form').eq(_index).css('display','block');
+			$('form').eq(_index).siblings('form').css('display','none');
+		});		
+    });
+</script>    
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<title>无标题文档</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+	h3{
+		margin:0;
+		padding:0;
+	}
+	ul li{
+		list-style-type:none;
+	}
+	a{
+		text-decoration:none;
+		color:RGB(102,102,102);
+	}
+	.count{
+		float:left;
+		width:500px;
+		height:280px;
+		border:1px solid #ccc;
+		margin:25px;
+	}
+	.count h3{
+		width:500px;
+		height:40px;
+		background:#F5F5F5;
+		line-height:40px;
+		text-align:center;
+	}
+	table{border-collapse:collapse;}
+  	thead tr{height:50px;}
+	tbody tr{
+		height:45px;
+		text-align:center;
+		border-top:1px solid RGB(221,221,221);
+		padding-left:10px;
+	}
+	tr:hover{background:#CCC;}
+	th{width:150px;;}
+	tr td{width:160px;}
+	count_table thead{height:50px;}
+	/**文章列表**/
+	.article{
+		widht:550px;
+		height:280px;
+		border:1px solid #CCC;
+		float:left;
+		margin-top:25px;
+		margin-left:30px;
+		
+	}
+	.article h3{
+		height:40px;
+		line-height:45px;
+		text-align:center;
+		width:550px;
+		background:#F5F5F5;
+		font-family:"Courier New", Courier, monospace;
+	
+	}
+	.article ul li{
+		height:39px;
+		line-height:40px;
+		border-bottom:1px solid RGB(221,221,221);
+	}
+	.article ul li a{
+		display:inline-block;
+		margin-left:15px;
+		background:url(images/article.png) left center no-repeat;
+		text-indent:20px;
+	}
+	.article ul li a:hover{
+		text-decoration:underline;
+		color:RGB(51,122,183);
+	}
+	.article ul li span{
+		float:right;
+		cursor:pointer;
+		margin-right:10px;
+		color:RGB(102,102,102);
+	}
+	.article ul li span:hover{
+		color:RGB(51,122,183);
+	}
+	/**系统信息**/
+	.system{
+		float:left;
+		clear:both;
+		width:500px;
+		hieght:20px;
+		margin-left:25px;
+		border:1px solid #CCC;
+		background:#EEE;
+	}
+	.system h3, .message h3{
+		height:35px;
+		line-height:35px;
+		padding-left:10px;
+	}
+	.system ul li, .message ul li{
+		height:30px;
+		line-height:30px;
+		margin-left:10px;
+	}
+	/**更新消息**/
+	.message{
+		width:550px;
+		height:186px;
+		float:left;
+		border:1px solid #CCC;
+		margin-left:55px;
+		background:#EEE;
+	}
+	.message ul li a{
+		color:#000;
+	}
+	.message ul li a:hover{
+		color:RGB(51,122,183);
+		text-decoration:underline;
+	}
+	
+</style>
+</head>
+
+<body>
+<div class="count">
+	<h3>网站数据统计</h3>
+    <table class="count_table">
+        <thead>
+            <tr>
+                <th>统计项目</th>
+                <th>今日</th>
+                <th>昨日</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                 <th scope="row">注册会员</th>
+                 <td>200</td>
+                 <td>400</td>
+            </tr>
+            <tr>
+                <th scope="row">登录会员</th>
+                <td>4100</td>
+                <td>5112</td>
+            </tr>                         
+            <tr>
+                <th scope="row">文章数</th>
+                <td>150</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <th scope="row">转载数</th>
+                <td>150</td>
+                <td>110</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--文章列表-->
+<div class="article">
+	<h3>网站热帖</h3> 
+	<ul>
+    	<li><a href="#">值得订阅的 12 份优质前端期刊</a><span>2016/10/10</span></li>
+        <li><a href="#">值得订阅的 12 份优质前端期刊</a><span>2016/10/10</span></li>
+        <li><a href="#">值得订阅的 12 份优质前端期刊</a><span>2016/10/10</span></li>
+        <li><a href="#">值得订阅的 12 份优质前端期刊</a><span>2016/10/10</span></li>
+        <li><a href="#">值得订阅的 12 份优质前端期刊</a><span>2016/10/10</span></li>
+        <li><a href="#">值得订阅的 12 份优质前端期刊</a><span>2016/10/10</span></li>
+    </ul>
+</div>
+
+<!--系统信息-->
+<div class="system">
+	<h3>系统信息</h3>
+	<ul>
+    	<li>程序版本：V1.0 [20160610]</li>
+        <li>Apache/2.4.10 (Win64) OpenSSL/0.9.8zb mod_fcgid/2.3.9</li>
+        <li>操作系统：WINNT</li>
+        <li>MySQL 版本：5.5.400]</li>
+        <li>上传文件：4M</li>
+    </ul>
+</div>
+<!--更新消息-->
+<div class="message">
+	<h3>更新消息</h3>
+    <ul>
+    	<li><a href="#">有2条新评论！</a></li>
+        <li><a href="#">4条新留言！</a></li>
+        <li>当前版本：V1.0 [20150610]</li>
+        <li>最新版本：V1.0 [20150610] <a href="#">[查看详情]</a></li>       
+    </ul>
+</div>
+
+
+
+</body>
+</html>

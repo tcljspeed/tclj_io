@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.iframecontent{
+	margin-left:30px;
+	margin-top:20px;
+}
+.pos span{
+	display:inline-block;
+	width:150px;
+	height:20px;
+	background: #39F;
+	color:#FFF;
+	margin-left:10px;
+}
+
+.gsjs-form {
+    margin: 10px;
+}
+.gsjs-form dl {
+    margin: 20px 0;
+}
+.gsjs_title {
+    width: 10%;
+    font-size: 14px;
+}
+.textarea-default {
+    width: 600px;
+    height: 90px;
+}
+.gsjs_btntit {
+    text-indent: -9999px;
+}
+</style>
+</head>
+
+<body>
+		<div class="iframecontent">
+            
+            <div class="pos">
+                <span>公司简介</span>
+            </div>
+
+            <div class="list">
+                <form action="/" method="get" accept-charset="utf-8" class="gsjs-form">
+                    <dl class="clearfix">
+                        <dt class="left gsjs_title">摘要：</dt>
+                        <dd class="left">
+                            <textarea name="gsjs_content" class="textarea-default">科技有限公司成立于2004年，我们倡导专业、务实、高效、创新”的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励机制，吸引了一批年轻的、有学识的、具有实干精神的人才。高素质、高水平、高效率的人才是小拇指信息在当今激烈的市场中立于不败之地的保障。不错的研究成果，获得良好的好评</textarea>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt class="left gsjs_title">内容：</dt>
+                        <dd class="left">
+                            <script id="editor" type="text/plain" style="width:600px;height:220px;"></script>
+                        </dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt class="left gsjs_title gsjs_btntit">提交按钮</dt>
+                        <dd class="left">
+                            <input type="button" name="gsjs_btn" value="提交" class="btn btn-blue">
+                        </dd>
+                    </dl>
+                </form>
+            </div>         
+        </div>
+        
+        
+<script type="text/javascript" charset="utf-8" src="lib/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="lib/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="lib/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script src="js/jquery-2.0.0.min.js"></script>
+<script>
+	$(function(){
+		//实例化编辑器
+		//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+		var ue = UE.getEditor('editor');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+.pagetitle_center{
+	height:85px;
+	width:990px;
+	margin:0 auto;
+}
+.mylogo{
+	width:120px;
+	height:85px;
+	float:left;
+}
+.pagetitle_center h1{
+	line-height:85px;
+	font-family:"微软雅黑";
+	color:RGB(22,102,102);
+}
+.pagebody{
+	background:#E92854;
+}
+.pagebody_center{
+	width:990px;
+	heigth:476px;
+	background:#E62C2D;
+	margin:0 auto;
+}
+.bodyimg{
+	display:inline;
+	
+}
+.land{
+	float:right;
+	width:347px;
+	height:350px;
+	background:#FFF;
+	margin-top:65px;
+}
+.land_t{
+	width:347px;
+	height:56px;
+}
+.title_text1,.title_text2{
+	color:RGB(102,102,102);
+}
+.title_text1{
+	float:left;
+	padding-top:20px;
+	padding-left:50px;
+	color:RGB(102,102,102);
+	color:red;
+}
+.title_text2{
+	float:right;
+	padding-top:20px;
+	padding-right:50px;
+}
+.active{
+	color:red;
+}
+.title_text1:hover{
+	color:red;
+	font-weight:bold;
+	cursor:pointer;
+}
+.title_text2:hover{
+	color:red;
+	font-weight:bold;
+	cursor:pointer;
+}
+.land_b{
+	width:347px;
+	display:none;	
+}
+.username,.pass_word{
+	margin-top:25px;
+	width:260px;
+	height:40px;
+	margin-left:20px;
+	margin-bottom:15px;
+	padding-left:35px;	
+	border:1px solid RGB(189,189,189);
+	font-size:14px;
+}
+.username{
+	background:3px center url(../images/usename_d.png) no-repeat;
+}
+.pass_word{
+	margin-top:8px;
+	background:3px center url(../images/pass_d.png) no-repeat;
+}
+.landbutton{
+	width:300px;
+	height:40px;
+	margin-left:18px;
+	margin-top:20px;
+	font-size:18px;
+	background:RGB(228,57,60);
+	border:none;
+	border-radius:5px;
+	color:#FFF;
+	font-weight:bold;
+}
+.landbutton:hover{
+	cursor:pointer;
+	background:#F00;
+	transition:400ms;
+}
+
+.land_code{
+	position:relative;
+}
+.land_img{
+	position:absolute;
+	width:150px;
+	height:150px;
+	left:100px;
+	top:30px;
+}
+.land_img_r{
+	position:absolute;
+	width:150px;
+	height:150px;
+	right:0;
+	top:30px;
+	display:none;
+}
+.remember{height:16px;line-height:16px;}
+.remember_b{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-left:16px;
+	margin-top:5px;
+
+}
+.remember_s{
+	display:inline-block;
+	height:16px;
+	line-height:16x;
+}
+.forget{
+	display:inline;
+	color:RGB(102,102,102);
+	text-decoration:none;
+	margin-left:130px;	
+}
+.forget:hover{
+	color:red;
+	text-decoration:underline;
+}
+

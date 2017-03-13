@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+.righttitle{
+	height:30px;
+	float:right;
+}
+.titlelist{
+	list-style-type:none;
+	margin-top:25px;
+	margin-right:35px;
+}
+.titlelist li{
+	display:inline-block;
+	height:22px;
+	width:50px;
+	text-decoration:underline;
+	font-size:14px;
+}
+.titlelist li:hover{
+	color:RGB(0,0,204);
+	cursor:pointer;
+}
+.drakscreen{
+	display:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#CCC;
+	z-index:-1;
+}
+.land{
+	width:390px;
+	height:400px;
+	position:absolute;
+	top:100px;
+	left:488px;
+	background:#FFF;
+	border:1px solid #3F9;
+	border-radius:5px;
+	box-shadow:0 2px #CCC; 
+}
+.landtitle{
+	height:50px;
+	width:390px;
+	
+	background:RGB(247,247,247);
+	background:left center url(../images/logo.png) no-repeat;
+	background-size:60px 50px;
+	text-indent:65px;
+	cursor:move;
+	float:left;
+	z-index:3;
+}
+.titletext{
+	line-height:50px;
+	float:left;
+	margin-left:40px;
+}
+.close{
+	padding-top:15px;
+	padding-right:15px;
+	float:right;
+}
+.close:hover {
+	url(../images/close_l.png);
+	cursor:pointer;
+}
+.mobile{
+	float:right;
+	margin-top:24px;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+.mobile img{
+	float:left;
+	width:18px;
+	height:18px;
+	margin-top:3px;
+	padding-right:10px;
+}
+.mobile span{
+	line-height:27px;
+}
+.mobile span:hover{
+	color:RGB(46,217,219);
+	text-decoration:underline;
+	cursor:pointer;
+}
+.user_input,.pass_input,.landbutton{
+	width:320px;
+	height:40px;
+	margin-left:20px;
+	margin-bottom:15px;
+	padding-left:35px;	
+	border-left:1px solid RGB(238,238,238);
+	border-top:1px solid RGB(238,238,238);
+	font-size:14px;
+}
+.user_input{
+	background:3px center url(../images/usename_d.png) no-repeat;
+}
+.pass_input{
+	background:3px center url(../images/pass_d.png) no-repeat;
+}
+.landbutton{
+	width:360px;
+	font-size:16px;
+	background:RGB(63,137,236);
+	border:none;
+	border-radius:5px;
+	text-align:center;
+	font-size:20px;
+	font-family:'微软雅黑';
+	cursor:pointer;
+	color:#FFF;
+	font-weight:600;
+}
+.landbutton:hover{
+	background:#06C;
+}

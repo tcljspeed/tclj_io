@@ -1,0 +1,2188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>驴妈妈旅游</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script src="lib/jquery-2.0.0.min.js"></script>
+</head>
+
+<body>
+<div id="main_container">
+	<!--顶部引用导航开始-->
+	<div class="topbar">
+    	<div class="topbar_box">
+        	<!--城市定位部分-->
+        	<div class="city_box">
+            	<div class="city_up">
+                	<i class="icon_city"></i>
+                	<b class="lv_city">上海</b>
+                    <a href="#" class="city_btn">[切换]</a>
+                </div>
+            </div>
+            <!--最右侧小信息部分-->
+            <ul class="top_link">
+            	<li class="dropdown my_lv">
+                	<a class="lv_link" href="#" style="margin-right:10px;">
+                        <span style="margin_right:10px;">我的驴妈妈</span>
+                        <i class="icon_arrow"></i>
+                    </a>   
+                    <div class="top_down">
+                    	<ul>
+                            <li><span>我的订单</span></li>
+                            <li><span>我的积分</span></li>
+                            <li><span>我的优惠券</span></li>
+                            <li><span>我的礼品卡</span></li>
+                        </ul>
+                    </div>             
+                </li>
+                <li>
+                	<a class="lv_link" href="#">积分商城</a>
+                </li>
+                <li>
+                	<a class="lv_link"  href="#">帮助</a>
+                </li>
+                <li  class="dropdown li_wx">               	
+                	<a class="lv_link " href="#">
+                    <i class="lv_icon icon_wx"></i>
+                    微信
+                    </a>
+                    <div class="top_down">
+                    	<img src="images/main_images/top_down_wx.jpg" />
+                    </div> 
+                    
+                </li>
+                <li  class="dropdown li_xcx">
+                	<a class="lv_link"  href="#">
+                    <i class="lv_icon icon_xcx"></i>
+                    小程序
+                    </a>
+                    <div class="top_down">
+                    	<img src="images/main_images/top_down_xcx.png";/>
+                    </div> 
+                </li>
+                <li class="li_wb">
+                	<a class="lv_link"  href="#">
+                    <i class="lv_icon icon_wb"></i>
+                    +微博
+                    </a>
+                </li>
+                <li>
+                	<a class="lv_link"  href="#">
+                    <i class="lv_icon icon_sjb"></i>
+                    手机版
+                    </a>
+                </li>
+                <li class="dropdown link_call">
+                	<a class="lv_link"  href="#">
+                        <i class="lv_icon icon_phone"></i>
+                        <span style="font-size:14px;">1010-6060</span>
+                        <i class="icon_arrow"></i>
+                    </a>
+                    <div class="top_down">
+                    	<span></span>
+                    </div>
+                </li>
+            </ul>
+            <!--最顶部登录部分-->
+            <div class="topbar_login">
+            	<a href="#" class="top_login">请登录</a>
+                <a href="#">免费注册</a>
+                <a href="#" >
+                	<img style="vertical-align: middle;" src="images/main_images/everyday_login.gif"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--顶部引用导航结束-->
+    <!--网页头部logo行开始-->
+    <div class="lv_header">
+    	<div class="header_inner">
+            <div class="lv_logo">
+                <a href="#"><img src="images/main_images/lv_logo.png"/></a>
+            </div>            
+            <div class="lv_jbr">
+            </div>
+            <!--搜索框开始-->
+            <div class="header_search">
+            	<div class="lv_search_box">
+                	<div class="search_type_box">
+                    	<div class="search_type_list">
+                        	<b>上海</b>
+                            <span>出发</span>
+                            <i class="icon_go"></i>
+                        </div>
+                        <input type="text" value="请输入目的地、主题、或关键词" class="lv_search"/>
+                    </div>
+                    <span class="lv_icon bt_lv_search"></span>
+                </div>
+            </div>
+            <!--搜索框结束-->
+        </div>
+    </div>
+    <!--网页头部logo行结束-->
+    <!--网页导航栏开始-->
+    <div class="lv_nav_bg">
+    	<div class="lv_nav" id="lv_nav">
+        	<ul class="lv_nav_ul">
+            	<li id="home">
+                	<a href="#">首页</a>
+                </li>
+                <li id="abroad">
+                	<a href="#">出境游
+                    	<i class="icon_triangle"></i>                   	
+                    </a>
+                    <div class="down_nav" style="left:-135px;">
+                    	<p style="left:75px;">
+                        	<a href="#" class="downNav_def">出境首页</a>
+                            <a href="#" class="downNav_def">当地玩乐</a>
+                            <a href="#" class="downNav_def">邮轮</a>
+                            <a href="#" class="downNav_def">签证</a>
+                            <a href="#" class="downNav_def">WIFI/电话卡</a>
+                            <a href="#" class="downNav_def">出境特卖</a>
+                            <a href="#" class="downNav_def">飞驴湾</a>
+                            <a href="#" class="downNav_def">国际出租</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:170px;"></span>
+                    </div>
+                    
+                </li>
+                <li id="destroute">
+                	<a href="#">国内游
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-212px">
+                    	<p style="left:75px;">
+                        	<a href="#" class="downNav_def">国内长途游</a>
+                            <a href="#" class="downNav_def">机票+酒店</a>
+                            <a href="#" class="downNav_def">周边跟团</a>
+                            <a href="#" class="downNav_def">国内特卖</a>
+                            <a href="#" class="downNav_def">三亚</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:250px;"></span>
+                    </div>
+                </li>
+                <li id="around">
+                	<a href="#">周边游
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-287px">
+                    	<p style="left:75px;">
+                        	<a href="#" class="downNav_def">酒店+景点</a>
+                            <a href="#" class="downNav_def">周边跟团</a>
+                            <a href="#" class="downNav_def">景区门票</a>
+                            <a href="#" class="downNav_def">自驾游</a>
+                            <a href="#" class="downNav_def">亲自游</a>
+                            <a href="#" class="downNav_def">度假酒店</a>
+                            <a href="#" class="downNav_def">房车露营</a>
+                            <a href="#" class="downNav_def">周边特卖</a>
+                            <a href="#" class="downNav_def">三亚</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:325px;"></span>
+                    </div>
+                </li>
+                <li id="ticket">
+                	<a href="#">景点门票
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-363px">
+                    	<p style="left:235px;">                       	
+                            <a href="#" class="downNav_def">国内门票</a>
+                            <a href="#" class="downNav_def">酒店+景点</a>
+                            <a href="#" class="downNav_def">门票特卖</a>
+                            <a href="#" class="downNav_def">境外门票</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:405px;"></span>
+                    </div>
+                </li>
+                <li id="hotel">
+                	<a href="#">度假酒店
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-455px">
+                    	<p style="left:272px;">                       	
+                            <a href="#" class="downNav_def">国际酒店</a>
+                            <a href="#" class="downNav_def">酒店+景点</a>
+                            <a href="#" class="downNav_def">亲自酒店</a>
+                            <a href="#" class="downNav_def">房车露营</a>
+                            <a href="#" class="downNav_def">境外酒店</a>
+                            <a href="#" class="downNav_def">特色民宿</a>
+                            <a href="#" class="downNav_def">境外酒店特卖</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:500px;"></span>
+                    </div>
+                </li>
+                <li id="local_tour">
+                	<a href="#">当地游</a>
+                </li>
+                <li id="zijia">
+                	<a href="#">自驾游
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-623px">
+                    	<p style="left:378px;">                       	
+                            <a href="#" class="downNav_def">周边自驾</a>
+                            <a href="#" class="downNav_def">国内+出境自驾</a>
+                            <a href="#" class="downNav_def">房车+露营自驾</a>
+                            <a href="#" class="downNav_def">酒店+景点</a>
+                            <a href="#" class="downNav_def">门票</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:660px;"></span>
+                    </div>
+
+                </li>
+                <li id="lvyue">
+                	<a href="#">亲子游</a>
+                </li>
+                <li id="liner">
+                	<a href="#">邮轮
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-775px">
+                    	<p style="left:615px;">                       	
+                            <a href="#" class="downNav_def">邮轮首页</a>
+                            <a href="#" class="downNav_def">驴妈妈专线</a>
+                            <a href="#" class="downNav_def">日韩经典</a>
+                            <a href="#" class="downNav_def">品质长线</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:805px;"></span>
+                    </div>
+                </li>
+                <li id="flight">
+                	<a href="#">机票
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-835px">
+                    	<p style="left:756px;">                       	
+                            <a href="#" class="downNav_def">国内机票</a>
+                            <a href="#" class="downNav_def">机票+酒店</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:860px;"></span>
+                    </div>
+                </li>
+                <li id="train">
+                	<a href="#">火车票</a>
+                </li>
+                <li id="tuangou">
+                	<a href="#">特卖会</a>
+                </li>
+                <li id="custom">
+                	<a href="#">定制游</a>
+                </li>
+                <li id="finace">
+                	<a href="#">金融
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-1123px">
+                    	<p style="left:968px;">                       	
+                            <a href="#" class="downNav_def">小驴白条</a>
+                            <a href="#" class="downNav_def">小驴分期</a>
+                            <a href="#" class="downNav_def">理财</a>
+                            <a href="#" class="downNav_def">外币兑换</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:1150px;"></span>
+                    </div>
+                </li>
+                <li id="lvyou">
+                	<a href="#">旅游攻略
+                    <i class="icon_triangle"></i>
+                    </a>
+                    <div class="down_nav" style="left:-1183px">
+                    	<p style="left:796px;">                       	
+                            <a href="#" class="downNav_def">目的地</a>
+                            <a href="#" class="downNav_def">攻略</a>
+                            <a href="#" class="downNav_def">游记</a>
+                            <a href="#" class="downNav_def">驴游宝</a>
+                            <a href="#" class="downNav_def">写点评</a>
+                            <a href="#" class="downNav_def">问答</a>
+                            <a href="#" class="downNav_def">资讯</a>
+                            <a href="#" class="downNav_def">论坛</a>
+                        </p>
+                        <span class="lv_icon down_nav_t" style="left:1225px;"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+	<!--网页导航栏结束-->
+    
+    <!--首页轮播图栏开始-->
+    <div class="lv_ban">
+    
+    
+    	<!--轮播图左侧的景点门票栏开始-->
+        <div class="lv_s_all">
+        	<!--左侧导航条-->
+            <ul class="lv_s_tab">
+            	<li class="active">景点门票</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地游</li>
+                <li>度假酒店</li>
+                <li>机票</li>
+                <li>火车票</li>
+                <li>邮轮</li>
+            </ul>
+            <!--右侧展示内容区域-->
+            <div class="lv_s_r">
+            	<!--景点门票板块开始-->
+                <div class="lv_s_list">
+                	<ul class="lv_s_ipt_tab">
+                    	<li class="active">
+                        景点门票
+                        <i class="lv_s_tab_arrow"></i>
+                        </li>
+                        
+                        <li>
+                        酒店+景点
+                        <i class="lv_s_tab_arrow"></i>
+                        </li>
+                    </ul>
+                    <ul style="margin-top:20px;">
+                    	<li>
+                        	<input class="lv_s_input js_s_input"  value="请输入目的地、主题或景区名" 
+                            autocomplete="off" type="text"  num="0" style="color: rgb(187, 187, 187);width:419px;"
+                            onfocus="if(value=='请输入目的地、主题或景区名'){value=''}"
+                            onblur="if (value ==''){value='请输入目的地、主题或景区名'}">
+                        </li>
+                    </ul>
+                    <div class="lv_s_search">
+                    	<span class="lv_s_search_btn">搜索</span>
+                    </div>
+                    <div class="lv_s_hot">
+                    	<div class="lv_s_hot_list">
+                        	<dl>
+                            	<dt>热搜景点</dt>
+                                <dd>
+                                	<a href="#">上海迪斯尼乐园</a>
+                                    <a href="#">上海野生动物园</a>
+                                    <a href="#">东方明珠</a>
+                                    <a href="#">杜莎夫人蜡像馆</a>
+                                    <a href="#">上海欢乐谷</a>
+                                    <a href="#">长风海洋世界</a>
+                                    <a href="#">顾村公园</a>
+                                    <a href="#">上海动物园</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <a class="lv_s_pic">
+                    	<img  src="images/main_images/1488440209616.jpg"/>
+                    </a>
+                </div>
+                <!--景点门票板块结束-->
+            </div>
+        </div>
+        <!--轮播图左侧的景点门票栏结束-->
+        
+        
+        
+        <!--轮播图开始-->
+        <div class="lv_ban_wrap_all">
+        	<div class="lv_ban_wrap">
+            	<!--轮播图-->
+            	<ul class="lv_ban_img" >
+                	<li class="active">
+                    	<a href="#"><img src="images/main_images/carousel_01.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_02.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_03.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_04.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_05.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_06.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_07.jpg"/></a>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/main_images/carousel_08.jpg"/></a>
+                    </li>
+                    
+                </ul>
+                <!--轮播图的交互按钮-->
+                <ul class="lv_ban_tab">
+                	<li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!--轮播图结束-->
+    </div>
+    <!--首页轮播图栏结束-->
+    
+    <!--首页主体内容开始-->
+    <div class="wrap">
+    	<!--特卖会模块开始-->
+    	<div class="public specialBuy floor_item" id="floor1">
+        	<!--特卖会标题-->
+        	<div class="public_tit">
+            	<ul class="public_sub">
+                	<li class="active">今日必抢
+                    	<span class="syicon syicon_arrow"></span>
+                    </li>
+                    <li>品质甩尾
+                    	<span class="syicon syicon_arrow"></span>
+                    </li>
+                    <li>新品速递
+                    	<span class="syicon syicon_arrow"></span>
+                    </li>
+                    <li>低价游云南
+                    	<span class="syicon syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="specialbuy_more">
+                	<a href="#">
+                    	<img src="images/main_images/fb24de39-f16e-41f6-a926-dce4af77ddb7.jpg" />
+                    </a>
+                </div>
+            </div>            
+            <!--特卖会内容-->
+            <div class="pro">
+            	<ul>
+                	<li>
+                    	<a href="#">
+                        	<img src="images/page_imges/404f317e-bf6d-4888-9c99-ae4e118e6e94_300_200.jpg" />
+          					<!--商品详细信息部分-->
+                            <div class="pro_info">
+                            	<p class="pro_tit">
+                                	<i class="pro_tag">酒店套餐
+                                    	<span class="pro_tag_line">|</span>
+                                    </i>                                 
+								【春暖花开 安吉君澜2天1晚自由行特卖】住1晚安吉君澜度假酒店（含双早）＋浙北大峡谷＼石语汤池2选1套餐，免费健身房＋儿童乐园＋无线WIFI
+                                </p>
+                                <div class="pro_price">
+                                	<div class="pro_pri">
+                                    	<i>¥</i>499
+                                    </div>
+                                    <!--秒杀部分-->
+                                    <div class="sale_time">
+                                    	距结束
+                                        <span class="syicon syicon_datebg">76</span>:
+                                        <span class="syicon syicon_datebg" >45</span>:
+                                        <span class="syicon syicon_datebg">40</span>
+                                    </div>
+                                    <span class="buyBtn">立即抢购</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<img src="images/page_imges/4a44e415-1042-408a-aca7-39cea4aca88b_300_200.jpg" />
+          					<!--商品详细信息部分-->
+                            <div class="pro_info">
+                            	<p class="pro_tit">
+                                	<i class="pro_tag">酒店套餐
+                                    	<span class="pro_tag_line">|</span>
+                                    </i>                                 
+								【张家港金凤凰温泉2天1晚自由行特卖】住张家港金凤凰温泉度假村桃花汤屋／标准房＋双人早餐＋鲜美温泉烤鱼／汤房美食套餐（中餐／晚餐）＋金凤凰温泉门票2张房＋儿童乐园＋无线WIFI
+                                </p>
+                                <div class="pro_price">
+                                	<div class="pro_pri">
+                                    	<i>¥</i>550
+                                    </div>
+                                    <!--秒杀部分-->
+                                    <div class="sale_time">
+                                    	距结束
+                                        <span class="syicon syicon_datebg">76</span>:
+                                        <span class="syicon syicon_datebg" >45</span>:
+                                        <span class="syicon syicon_datebg">40</span>
+                                    </div>
+                                    <span class="buyBtn">立即抢购</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<img src="images/page_imges/17d5c5b0-203f-4863-93ab-97239914177d_300_200.jpg"/>
+          					<!--商品详细信息部分-->
+                            <div class="pro_info">
+                            	<p class="pro_tit">
+                                	<i class="pro_tag">自由行
+                                    	<span class="pro_tag_line">|</span>
+                                    </i>                                 								
+								【错峰爆款】三亚双飞5日4晚自由行( 三亚湾红树林度假世界（木棉酒店），含早 观景阳台 儿童乐园 行动书屋 多家经济餐厅【特卖】)
+							    </p>
+                                <div class="pro_price">
+                                	<div class="pro_pri">
+                                    	<i>¥</i>2436
+                                    </div>
+                                    <!--秒杀部分-->
+                                    <div class="sale_time">
+                                    	距结束
+                                        <span class="syicon syicon_datebg">63</span>:
+                                        <span class="syicon syicon_datebg" >21</span>:
+                                        <span class="syicon syicon_datebg">27</span>
+                                    </div>
+                                    <span class="buyBtn">立即抢购</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<img src="images/page_imges/7bfa391c-8de8-4ab3-bef1-4460f4c05d66_300_200.jpg"/>
+          					<!--商品详细信息部分-->
+                            <div class="pro_info">
+                            	<p class="pro_tit">
+                                	<i class="pro_tag">跟团游
+                                    	<span class="pro_tag_line">|</span>
+                                    </i>                                 								
+								【早订早惠】越南芽庄3晚4日半自助游([下单立减100]越南航空直飞，芽庄市区半日游，全程舒适酒店，含出海半日游和下午茶【出境特卖】★★★★)						
+                                </p>
+                                <div class="pro_price">
+                                	<div class="pro_pri">
+                                    	<i>¥</i>2449
+                                    </div>
+                                    <!--秒杀部分-->
+                                    <div class="sale_time">
+                                    	距结束
+                                        <span class="syicon syicon_datebg">52</span>:
+                                        <span class="syicon syicon_datebg" >19</span>:
+                                        <span class="syicon syicon_datebg">34</span>
+                                    </div>
+                                    <span class="buyBtn">立即抢购</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<img src="images/page_imges/ba5a64ea-5dd1-4a5f-bc1c-bcd577eef80f_300_200.jpg"/>
+          					<!--商品详细信息部分-->
+                            <div class="pro_info">
+                            	<p class="pro_tit">
+                                	<i class="pro_tag">跟团游
+                                    	<span class="pro_tag_line">|</span>
+                                    </i>                                 							
+								【立减800】大理、丽江、香格里拉三飞6日游(女人节特惠3.11、3.15立减800，东航包机，全程无自费，大理进香格里拉出，云上花海，洱海大游船，喜洲古镇小马车，玉龙雪山大索道，品牦牛火锅，白族特色餐，篝火打跳，赠丽水金沙，藏民家访，甩尾特卖)
+                                </p>
+                                <div class="pro_price">
+                                	<div class="pro_pri">
+                                    	<i>¥</i>3280
+                                    </div>
+                                    <!--秒杀部分-->
+                                    <div class="sale_time">
+                                    	距结束
+                                        <span class="syicon syicon_datebg">62</span>:
+                                        <span class="syicon syicon_datebg" >18</span>:
+                                        <span class="syicon syicon_datebg">18</span>
+                                    </div>
+                                    <span class="buyBtn">立即抢购</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>          
+        </div>
+        <!--特卖会模块结束-->
+        <!--大促模块开始-->
+        <div class="public dacu_box floor_item" style="clear:both;margin-top:50px;" id="floor2" >
+        	<!--大促标题部分-->
+        	<div class="public_tit">
+            	<h3 class="fl">
+                	<strong>春游大促</strong>
+                </h3>
+                <ul class="public_sub">
+                	<li class="active">门票特价
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>国内特价
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>出境特价
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多大促
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+          	<!--大促内容部分开始-->
+            <div class="publicBox">
+            	<!--大促内容左边板块-->
+            	<div class="dacu_left fl">
+                	<ul class="dacuLink">
+                    	<li><a href="#">邮轮每满500减100预售</a></li>
+                        <li><a href="#">花开云南 畅游2折起</a></li>
+                    </ul>
+                </div>        
+            	<!--大促内容右边板块-->
+            	<div class="pro_right fr">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/1535f217-febd-40ac-950e-d82718fa8a47_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        上海黄浦江游览
+                                    </p>                                
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>98
+                                            <span>起</span>
+                                            <del><i>¥</i>120</del>
+                                        </div>                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/cdeee7a5-91b8-4272-a54e-389e4650d037_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                      
+									上海大悦城摩天轮
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>80
+                                            <span>起</span>
+                                            <del><i>¥</i>80</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/c9b0c6ff-8dce-407d-b763-054c82f94593_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        上海外滩观光隧道
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>180
+                                            <span>起</span>
+                                            <del><i>¥</i>200</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/00c1ebe1-dd92-4d27-b4d5-e104d2af4e15_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        上海陶瓷科技艺术馆
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>20
+                                            <span>起</span>
+                                            <del><i>¥</i>30</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/23334c97-6ea4-40b4-99ad-7716330baa8f_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        汤连得温泉馆118号店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>1
+                                            <span>起</span>
+                                            <del><i>¥</i>69</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/41421f3c-738f-44b8-8903-c9e50d001835_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        上海迪斯尼乐园
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>280
+                                            <span>起</span>
+                                            <del><i>¥</i>370</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/2b3cd3c7-8a27-4796-a6d3-62c9e7e1021b_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        立秀宝儿童英语小镇
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>50
+                                            <span>起</span>
+                                            <del><i>¥</i>50</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/75b4076c-b3d6-43d6-9068-f3bf2cc2ab50_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        上海野生动物园
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<i>¥</i>120
+                                            <span>起</span>
+                                            <del><i>¥</i>130</del>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            <!--大促内容部分结束-->
+        </div>    
+        <!--大促模块结束-->
+        <!--出境游模块开始-->
+        <div class="public chujinyou floor_item" id="floor3">
+        	<!--出境游标题-->
+        	<div class="public_tit">
+            	<h3 class="fl"><strong>出境游</strong></h3>
+                <ul class="public_sub">
+                	<li class="active">热门推荐
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>东南亚
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>海岛
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>港澳台
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>欧美
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>澳非
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>签证
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>精选自营
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多热门推荐
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+            <!--出境游内容-->
+            <div class="publicBox">
+            	<!--内容左边部分-->
+            	<div class="public_aside fl">
+                	<div class="asideNav">
+                    	<h3>热门路线玩法</h3>
+                        <div class="asideNav_list">
+                        	<a href="#">泰国</a>
+                            <a href="#">日本</a>
+                            <a href="#">长滩岛</a>
+                            <a href="#">毛里求斯</a>
+                            <a href="#">普吉岛</a>
+                            <a href="#">巴厘岛</a>
+                            <a href="#">香港</a>
+                            <a href="#">欧洲</a>
+                            <a href="#">土耳其</a>
+                        </div>
+                    </div>
+                    <div class="asideLink">
+                    	<img src="images/page_imges/1487922575101.jpg" />
+                    </div>
+                </div>
+                
+                <!--内容右边部分-->
+                <div class="pro_right fr">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/43fcb163-e1a9-4a68-9b4b-afacd7b1d315_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        日本冲绳4晚5日经典游，1天自由活动
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97.8%好评率</span>
+                                        	<i>¥</i>3959
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/5bfdc255-8986-4069-bd21-b21171bb7224_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        香港3晚4日自由行(华丽海景酒店，港龙国泰航空往返)
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.4%好评率</span>
+                                        	<i>¥</i>1770
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/1414492245091_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        毛里求斯5晚8日自由行，2-3月指定日期赠北部当地游一次
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">99.5%好评率</span>
+                                        	<i>¥</i>13430
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/3ec861ab-5770-4b4e-b4d9-d00c995018db_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        泰国曼谷芭提雅5晚7日经典游，全程泰式风情酒店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">98.3%好评率</span>
+                                        	<i>¥</i>2803
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/d8aa45b0-7447-4b90-9f40-9ef0dc2945da_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        巴厘岛6日经典游，鹰航往返，花园泳池别墅与国际酒店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">98.5%好评率</span>
+                                        	<i>¥</i>3829
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/bf9a2b20-c6fa-473a-9067-2adbdb4ab85c_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        长滩岛5晚6日自由行，宿务太平洋，包机直飞
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">93.8%好评率</span>
+                                        	<i>¥</i>3899
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/86b4cc3c-b701-4c6b-91df-d6976a277ab6_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        赏樱”日本本州5晚6日游，出境特卖
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">99.6%好评率</span>
+                                        	<i>¥</i>4492
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/chujin_images/99b18a1c-cd06-4c58-a25d-b4d05e990433_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">景区门票
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        泰国普吉岛5晚7日深度游，2晚国际酒店2晚泳池别墅
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>3830
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>                      
+                    </ul>
+                </div>           
+            </div>
+        </div>      
+        <!--出境游模块结束-->
+        <!--国内游模块开始-->
+        <div class="public chujinyou floor_item" id="floor4">
+        	<!--国内游标题-->
+        	<div class="public_tit">
+            	<h3 class="fl"><strong>国内游</strong></h3>
+                <ul class="public_sub">
+                	<li class="active">热卖
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>海南
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>云南
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>广州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>北京
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>福建
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>四川
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>湖南
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>广西
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>陕西
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多热卖
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+            <!--出境游内容-->
+            <div class="publicBox">
+            	<!--内容左边部分-->
+            	<div class="public_aside fl">
+                	<div class="asideNav">
+                    	<h3>热门路线玩法</h3>
+                        <div class="asideNav_list">
+                        	<a href="#">开心驴行</a>
+                            <a href="#">私享团</a>
+                            <a href="#">摄影采风</a>
+                            <a href="#">海滨岛屿</a>
+                            <a href="#">休闲娱乐</a>
+                            <a href="#">欢乐亲子</a>
+                            <a href="#">都市观光</a>
+                            <a href="#">山水景观</a>
+                            <a href="#">主题乐园</a>
+                            <a href="#">古迹遗址</a>
+                        </div>
+                    </div>
+                    <div class="asideLink">
+                    	<img src="images/page_imges/guonei_images/1487670479816.jpg"/>
+                    </div>
+                </div>
+                
+                <!--内容右边部分-->
+                <div class="pro_right fr">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/258211d4-01e4-4c57-844d-419c30b1d1b0_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">跟团游
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                
+									三亚蜈支洲岛、呀诺达、南山天涯海角双飞5日跟团游
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">99.7%好评率</span>
+                                        	<i>¥</i>2720
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/327e74a2-9267-4cd5-a35b-a207c0b6e605_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>
+                                        三亚双飞5日4晚自由行（住亚龙湾红树林度假酒店）
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97.4%好评率</span>
+                                        	<i>¥</i>2415
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/6e9eb608-e08f-4855-b426-9c7406c7f5d3_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">跟团游
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                    
+									腾冲、怒江、瑞丽双飞6日游(直飞腾冲，全程无自费)
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">90%好评率</span>
+                                        	<i>¥</i>2888
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/d34d3322-60b9-472f-804e-ada10af86a31_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                       
+									厦门双飞3日2晚自由行(宿马哥孛罗东方大酒店或琴笙酒店)
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>1320
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/5557b0e2-8b3b-469a-938b-3bbf4d2931ba_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">跟团游
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                      
+									拉萨、林芝、桃花沟、羊湖、扎什伦布寺卧飞10日游								
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>3560
+                                            <span>起/人</span>
+
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/f394788b-4798-4cff-89e6-129afa519d9a_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                  
+									上海-昆明往返双飞6日0晚自由行，黄金时段航班
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>1999
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/e62d51da-abae-4d29-aac4-d458d3e16df0_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">跟团游
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                 
+									内蒙古双飞4日跟团游(住宿升级，品特色美食)
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>1999
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/guonei_images/559e317e-8fc2-48a2-9746-df201ae27874_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                             
+									广州长隆动物园、欢乐世界、大马戏双飞3日2晚自由行
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>2999
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>                                             
+                    </ul>
+                </div>           
+            </div>
+        </div>            
+        <!--国内游模块结束-->
+        <!--周边游模块开始-->
+        <div class="public chujinyou floor_item" id="floor5">
+        	<!--周边游标题-->
+        	<div class="public_tit">
+            	<h3 class="fl"><strong>周边游</strong></h3>
+                <ul class="public_sub">
+                	<li class="active">当季热门
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>上饶
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>南京
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>杭州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>上海
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>黄山
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>湖州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>苏州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多当季热门
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+            <!--周边游内容-->
+            <div class="publicBox">
+            	<!--内容左边部分-->
+            	<div class="public_aside fl">
+                	<div class="asideNav">
+                    	<h3>热门路线玩法</h3>
+                        <div class="asideNav_list">
+                        	<a href="#">主题乐园</a>
+                            <a href="#">暖心温泉</a>
+                            <a href="#">山水景观</a>
+                            <a href="#">古镇村落</a>
+                            <a href="#">田园度假</a>
+                            <a href="#">时令采摘</a>
+                            <a href="#">亲子度假</a>
+                            <a href="#">海滨岛屿</a>
+                            <a href="#">踏青赏花</a>
+                            <a href="#">3天2晚</a>
+                            <a href="#">都市观光</a>
+                            <a href="#">周边度假</a>
+                        </div>
+                    </div>
+                    <div class="asideLink">
+                    	<img src="images/page_imges/zhoubian_images/1487748543246.jpg"/>
+                    </div>
+                </div>
+                
+                <!--内容右边部分-->
+                <div class="pro_right fr">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/f8da116e-1b1f-46dc-9361-fa6f4144277b_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">酒店套餐
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                								
+									住杭州宋城千古情主题酒店＋游宋城＋观千古情演出
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.3%好评率</span>
+                                        	<i>¥</i>598
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/3bd1b81b-9693-4631-a95f-f606ab2e4835_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                         
+									住安吉君澜度假酒店＋江南天池／中国大竹海等多选一
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">94.8%好评率</span>
+                                        	<i>¥</i>560
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/b21bfbb7-58be-4034-9708-1857c6119410_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                    								
+									住常州环球恐龙城维景国际大酒店＋玩恐龙园								
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97.2%好评率</span>
+                                        	<i>¥</i>558
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/1415582512526_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                       							
+									住御水温泉度假酒店／南山竹海客栈酒店2选1＋御水温泉
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.8%好评率</span>
+                                        	<i>¥</i>815
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/4b1c849e-7cc1-41cf-a75d-27e11026a2cb_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">酒店套餐
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                      								
+									住东平国家森林公园景区内奢华房车+游森林公园								
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">93.5%好评率</span>
+                                        	<i>¥</i>518
+                                            <span>起/人</span>
+
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/ead848a9-4028-4556-a981-75670e4eb399_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">自由行
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                  							
+									住上海迪士尼度假区内房车驿站，游上海迪士尼乐园
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.1%好评率</span>
+                                        	<i>¥</i>1578
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/a363ab00-0ae4-4f73-ab38-be68ac8c5c7a_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">跟团游
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                                 									
+									苏州，乌镇，杭州巴士3日深度游，一车到底，漫游古镇								
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">98.4%好评率</span>
+                                        	<i>¥</i>525
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="margin-top:25px;">
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/zhoubian_images/2734f610-c617-47e8-b890-57877b861f0c_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:36px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    	<i class="pro_tag">跟团游
+                                        	<span class="pro_tag_line">|</span>
+                                        </i>                             								
+									千岛湖森林氧吧纯玩2日巴士游，可选千岛湖中心湖行程
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">95.1%好评率</span>
+                                        	<i>¥</i>234
+                                            <span>起/人</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>                                             
+                    </ul>
+                </div>           
+            </div>
+        </div>
+        <!--周边游模块结束-->
+        <!--景点门票部分开始-->
+        <div class="public chujinyou floor_item" id="floor6">
+        	<!--景点门票标题-->
+        	<div class="public_tit">
+            	<h3 class="fl"><strong>景点门票</strong></h3>
+                <ul class="public_sub">
+                	<li class="active">上海
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>浙江
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>江苏
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>安徽
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>江西
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>福建
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多上海
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+            <!--景点门票内容-->
+            <div class="publicBox">
+            	<!--内容左边部分-->
+            	<div class="public_aside fl">
+                	<div class="asideNav" style="height:145px;">
+                    	<h3>热门路线玩法</h3>
+                        <div class="asideNav_list">
+                        	<a href="#">舟山普陀山</a>
+                            <a href="#">鼓浪屿</a>
+                            <a href="#">灵山大佛</a>
+                            <a href="#">南京梅花节</a>
+                            <a href="#">雪浪湖温泉</a>
+                            <a href="#">上海动物园</a>
+                            <a href="#">东方明珠</a>
+                        </div>
+                    </div>
+                    <div class="asideLink">
+                    	<img src="images/page_imges/menpiao_images/ad07f429-cfd5-4bb3-946d-ec598513da56.jpg"/>
+                    </div>
+                </div>
+                
+                <!--内容右边部分-->
+                <div class="pro_right fr">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/41421f3c-738f-44b8-8903-c9e50d001835_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">                                	上海迪斯尼乐园
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.7%好评率</span>
+                                        	<i>¥</i>280
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/9deacddb-2a9b-4bf4-87be-eb934f799278_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    东方明珠
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97%好评率</span>
+                                        	<i>¥</i>160
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/9dd8a257-b45d-493a-aa66-12756e78d3fe_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海动物园
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97.5%好评率</span>
+                                        	<i>¥</i>120
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/200a8196-25b8-4108-902a-615e9fdf3262_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海欢乐谷
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.8%好评率</span>
+                                        	<i>¥</i>69
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/99c04a34-79c2-41ab-a584-d2a1f8e4d7de_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海长风海洋世界
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.8%好评率</span>
+                                        	<i>¥</i>160
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/09004019-c6f8-4747-88c0-26147819a5e0_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海杜莎夫人蜡像馆
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">95.1%好评率</span>
+                                        	<i>¥</i>170
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/1412850247129_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海环球金融中心观光厅
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">96.6%好评率</span>
+                                        	<i>¥</i>126
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/menpiao_images/1301628162941_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海马戏城【ERA-时空之旅】
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97.4%好评率</span>
+                                        	<i>¥</i>143
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>                                            
+                    </ul>
+                </div>           
+            </div>
+        </div>     
+        <!--景点门票部分结束-->
+        <!--度假酒店模块开始-->
+        <div class="public chujinyou floor_item" id="floor7">
+        	<!--度假酒店标题-->
+        	<div class="public_tit">
+            	<h3 class="fl"><strong>度假酒店</strong></h3>
+                <ul class="public_sub">
+                	<li class="active">上海
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>常州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>杭州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>苏州
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>宁波
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>黄山
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>南京
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>南昌
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>武汉
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多上海
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+            <!--度假酒店内容-->
+            <div class="publicBox">
+            	<!--内容左边部分-->
+            	<div class="public_aside fl">
+                	<div class="asideNav" style="height:145px;">
+                    	<h3>热门路线玩法</h3>
+                        <div class="asideNav_list">
+                        	<a href="#">开元</a>
+                            <a href="#">花间堂</a>
+                            <a href="#">悦榕庄</a>
+                            <a href="#">洲际</a>
+                            <a href="#">恒大</a>
+                            <a href="#">喜达屋</a>
+                            <a href="#">希尔顿</a>
+                            <a href="#">温德姆</a>
+                            <a href="#">万豪</a>
+                            <a href="#">君澜</a>
+                            <a href="#">雅高</a>
+                            <a href="#">碧桂园</a>
+                        </div>
+                    </div>
+                    <div class="asideLink">
+                    	<img src="images/page_imges/jiudian_images/1487748603859.jpg"/>
+                    </div>
+                </div>
+                
+                <!--内容右边部分-->
+                <div class="pro_right fr">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/gp1_M00_52_FD_pIYBAFItWy2AbMzlAAGNlUdAJVI199_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">                                	上海威斯丁大饭店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">97.5%好评率</span>
+                                        	<i>¥</i>1341
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/437b914c-968d-46a6-b595-9e43cea49ba8_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+                                    上海莎海国际酒店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">95.2%好评率</span>
+                                        	<i>¥</i>448
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/gp1_M00_CD_D3_pYYBAFIodyOAd5Y-AAFpDWCPBy4432_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海浦东绿地假日酒店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">95.8%好评率</span>
+                                        	<i>¥</i>768
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/_i_Mobile640_960_0000hVRe_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海虹桥迎宾馆
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">100%好评率</span>
+                                        	<i>¥</i>763
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/1805bbfa-bf0d-4af5-ae67-e4e6b608a3e5_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海川沙宾馆
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">98%好评率</span>
+                                        	<i>¥</i>189
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/_i_Mobile640_960_0000akhC_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									虹桥喜来登上海太平洋大饭店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">90%好评率</span>
+                                        	<i>¥</i>818
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/gp3_M00_C4_69_tYYBAFSdO2-AADCTAAEydFbdD0c161_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海哈一顿大酒店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">90%好评率</span>
+                                        	<i>¥</i>491
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<div class="pro_img">
+                                	<img src="images/page_imges/jiudian_images/b758a8d5-01ae-4748-9382-c403ded2202c_300_200.jpg"/>
+                                </div>
+                                <div class="pro_info">
+                                	<p class="pro_tit" style="height:18px;margin-top:0; margin-bottom:2px; padding-left:2px; font-size:14px;">
+									上海海景海港大酒店
+                                    </p>
+                                    	<div class="pro_pri">
+                                        	<span class="fr">95%好评率</span>
+                                        	<i>¥</i>438
+                                            <span>起</span>
+                                        </div>
+                                </div>
+                            </a>
+                        </li>                                            
+                    </ul>
+                </div>           
+            </div>
+        </div>      
+        <!--度假酒店模块结束-->
+        <!--旅游攻略模块开始-->
+        <div class="public chujinyou clearfix floor_item" style="height:380px;" id="floor8">
+        	<!--旅游攻略标题-->
+        	<div class="public_tit">
+            	<h3 class="fl"><strong>旅游攻略</strong></h3>
+                <ul class="public_sub">
+                	<li class="active">日本
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>西安
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>新西兰
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>西藏
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>普吉岛
+                    <span class="syicon_arrow"></span>
+                    </li>
+                    <li>长滩岛
+                    <span class="syicon_arrow"></span>
+                    </li>
+                </ul>
+                <div class="fr public_tit_more" style=" padding-top:13px; line-height:14px;">
+                	<a href="#">更多日本
+                    	<i class="syicon syicon_more"></i>
+                    </a>
+                </div>
+            </div>
+            <!--旅游攻略内容-->
+            <div class="publicBox" style="height:350px;">
+            	<!--内容左边部分-->
+            	<div class="lv_Raiders fl">
+                    <img src="images/page_imges/lvgonglue_images/lvyoubao.png"/> 
+                </div>
+                
+                <!--攻略内容右边部分-->
+                <div class="gonglue_rig fr">
+                	<div class="gonglue_list">
+                    	<div class="gonglue_list_left">
+                        	<div class="gonglue_pic fl">                           	
+                            	<img  src="images/page_imges/lvgonglue_images/af6f50a8-98e9-4f03-bc6e-582540537337.jpg"/>
+                                <p>北海道の日本那场雪</p>
+                            </div>
+                            <div class="gonglue_info fl">
+                            	<h3 class="gonglue_tit">官方攻略</h3>
+                                <div class="gonglue_book">
+                                	<div class="gonglue_book_pic">
+                                    	<a href="#">
+                                        	<img style="width:74px; height:110px;" src="images/page_imges/lvgonglue_images/20120419111416430.jpg" />
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                    	<strong>日本官方攻略</strong>
+                                    </a>
+                                    <span>第五版</span>
+                                    <p>2014-6-18更新</p>
+                                    <P>25924次下载</P>
+                                </div>
+                                <h3 style="margin:25px 0 5px; padding:5px 0; font-size:16px; font-weight:normal;">相关游记</h3>
+                                <ul style="font-size:14px;">
+                                	<li>日本国旅行の初体验 </li>
+                                    <li>小饕北国美食の旅 手绘游记</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="gonglue_list_other fr">
+                        	<ul>
+                            	<li>
+                                	<a href="#"><img src="images/page_imges/lvgonglue_images/770f3edf-3ae0-46ba-bdd2-f0d1c9f527b7.jpg"/></a>
+                                </li>
+                                <li>
+                                	<a href="#"><img src="images/page_imges/lvgonglue_images/b6d947e7-ba6f-424c-94a7-dc2f0e6178cb.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <!--旅游攻略模块结束-->
+    </div>
+    <!--首页主体内容结束-->
+    
+    <!--底部部分开始-->
+    <!--价格保证开始-->
+    <div class=public_ft_box>
+    	<div style="width:1190px; margin-left:auto; margin-right:auto;">
+        	<a href="#" class="public_ft">
+            	<ul class="public_ft_list">
+                	<li>
+                    	<i class="ft_icon1"></i>
+                        <strong>价格保证</strong>
+                        同类产品,保证低价
+                    </li>
+                    <li>
+                    	<i class="ft_icon2"></i>
+                        <strong>退订保障</strong>
+                        因特殊情况影响出行，保证退订
+                    </li>                    
+                    <li>
+                    	<i class="ft_icon3"></i>
+                        <strong>救援保障</strong>
+                        旅途中遇意外情况，保证援助
+                    </li>
+                    <li>
+                    	<i class="ft_icon4"></i>
+                        <strong>7x24小时服务</strong>
+                        快速响应，全年无休
+                    </li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    <!--底部服务开始-->
+    <div class="foot_fuwu_box">
+    	<div class="foot_fuwu">
+        	<dl>
+            	<dt>关于我们</dt>
+                <dd><a href="#">驴妈妈简介</a></dd>
+                <dd><a href="#">旅游度假资质</a></dd>
+                <dd><a href="#">网站地图</a></dd>
+            </dl>
+            <dl>
+            	<dt>联系我们</dt>
+                <dd><a href="#">门店信息</a></dd>
+                <dd><a href="#">意见反馈</a></dd>
+                <dd>
+                	<i class="lv_icon icon_wb"></i>
+                	<a href="#">驴妈妈微博</a>
+                </dd>
+                <dd><a href="#">24小时服务电话</a></dd>
+                <dd><span class="foot_call">1010-6060</span></dd>
+                <dd><a href="#">免长话费，全年无休</a></dd>
+            </dl>
+            <dl>
+            	<dt>订购指南</dt>
+                <dd><a href="#">门票使用</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+            </dl>
+            <dl>
+            	<dt>支付方式</dt>
+                <dd><a href="#">驴妈妈账户支付</a></dd>
+                <dd><a href="#">驴妈妈礼品卡支付</a></dd>
+                <dd><a href="#">电话预授权支付</a></dd>
+                <dd><a href="#">分期付款</a></dd>
+            </dl>
+            <dl>
+            	<dt>特色服务</dt>
+                <dd><a href="#">团购预约</a></dd>
+                <dd><a href="#">分销系统</a></dd>
+                <dd><a href="#">驴妈妈联盟</a>
+                	<i class="lvma_union_icon">推广赚佣金</i>
+                </dd>
+                <dd><a href="#">开放平台</a></dd>
+            </dl>
+             <dl>
+            	<dt>售后服务</dt>
+                <dd><a href="#">退换货说明</a></dd>
+                <dd><a href="#">投诉建议</a></dd>
+                
+                <dd style="margin-top:15px;">
+                	举报电话：<br />
+                    <span style="font-size:16px;">021-51212006</span><br />
+                    举报邮箱：<br />
+                    <span style="font-size:16px;">wzjb@lvmama.com</span>
+                </dd>
+            </dl>
+            <div class="foot_dy">
+            	<h4>订阅特价、促销信息</h4>
+                <div class="foot_email">
+                	<input class="y_input" type="text" value="输入Email(如：a@b.c)" onfocus="if(value=='输入Email(如：a@b.c)'){value=''}" onblur="if (value ==''){value='输入Email(如：a@b.c)'}" style="color:#666;">
+                    <a href="javascript:">订阅</a>
+                    <i class="lv_icon"></i>
+                </div>
+                <div class="foot_ewm">
+                	<i class="lv_icon icon_ewm"></i>
+                    <p>
+                    扫码下载驴妈妈客户端<br />
+                    手机预订，优惠多多
+                    </p>
+                </div>
+                <p class="foot_report_arial">上海旅游投诉电话：021-64393615</p>
+                
+            </div>
+        </div>
+    </div>
+    <!--底部服务结束--
+    
+    <!--底部部分结束-->
+	
+    <!--左侧浮动导航开始-->
+    <div class="nav_left" style="display: none; top: 70px;">
+    	<div class="nav_left_nav">
+        	<ul class="clearfix">
+            	<li>
+                	<h3>特卖</h3>
+                </li>
+                <li>
+                	<h3>大促</h3>
+                </li>
+                <li>
+                	<h3>出境</h3>
+                </li>
+                <li>
+                	<h3>国内</h3>
+                </li>
+                <li>
+                	<h3>周边</h3>
+                </li>
+                <li>
+                	<h3>门票</h3>
+                </li>
+                <li>
+                	<h3>酒店</h3>
+                </li>
+                <li>
+                	<h3>攻略</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--左侧浮动导航结束-->
+    
+    <!--右侧侧边栏开始-->
+    <div class="global_sider">
+    	<div class="global_sider_app">
+        	<div>
+            	<span>
+                	<i class="icon_flower"></i>
+                </span>
+                <span>
+                	<i class="icon_global_app"></i>
+                </span>
+                <strong style="font-size:14px;">APP</strong>
+            </div>
+            <div class="global_apphiden">
+            	<img src="images/main_images/index_sider_app.png" style="width:80px; height:179px;"/>
+                <i class="global_sider_now"></i>
+            </div>
+        </div>
+        <div class="sider_login">
+        	<div class="global_sider_login">
+            	<a href="#">
+                	<i class="icon_global_use"></i>
+                    <span>登录</span>
+                </a>
+            </div>
+            <a href="#" class="global_sider_reg">
+            	<span>注册</span>
+                <span class="global_ad_reg" style="width:93px;">
+                	<span class="global_sider_now global_reg_arr"></span>
+                </span>
+            </a>
+        </div>
+        <div class="global_sider_bottom">
+        	<div class="global_sider_inve">
+            	<i class="icon_inve"></i>
+                <em>有奖<br />问卷
+                </em>
+            </div>
+            <div class="global_sider_fanku">
+            	<i class="icon_fanku"></i>
+                <em>反馈</em>
+            </div>
+            <span class="global_sider_gotop">
+            	<i class="icon_sider_gotop"></i>
+                <em>TOP</em>
+            </span>
+            <span class="global_close_sider">
+            	<i class="icon_sider_close"></i>
+            </span>
+            
+            <span class="global_open_sider" style="left:80px;">
+            </span>
+        </div>
+    </div>
+    <!--右侧侧边栏结束-->
+
+</div>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

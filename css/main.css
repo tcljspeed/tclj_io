@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+.headNav{
+	width:100%;
+	height:70px;
+	background:RGB(57,61,73) ;
+}
+.logo{
+	float:left;
+	display:inline-block;
+	height:50px;
+	width:180px;
+	margin-left:20px;
+	margin-top:20px;
+}
+.logo:hover{cursor:pointer;}
+.logo h1{
+	font-size:36px;
+	display:inline-block;
+	color:#FFF;
+}
+.topmenu{
+	display:inline-block;
+	margin-left:40px;
+}
+.topmenu li{
+	margin-left:10px;
+	float:left;
+	background:RGB(200,200,200);
+	border-radius:3px;
+}
+.topmenu li:hover{
+	background:#62D2F9;
+}
+.topmenu li.topmenu_click a{
+	padding:15px 40px 0px 40px;
+}
+.topmenu li.topmenu_click{
+	background:#62D2F9;
+}
+.topmenu li a{
+	display:block;
+	height:50px;
+	padding:15px 10px 0 10px;
+	line-height:80px;
+	color:#FFF;
+	font-size:16px;
+}
+/***顶部菜单的背景图片***********/
+.topmenu li#menu_1 a{
+	background:url(../images/ico_bg.png) no-repeat center -90px;
+}
+.topmenu li#menu_2 a{
+	background:url(../images/ico_bg.png) no-repeat center -190px;
+}
+.topmenu li#menu_3 a{
+	background:url(../images/ico_bg.png) no-repeat center -290px;
+}
+.topmenu li#menu_4 a{
+	background:url(../images/ico_bg.png) no-repeat center -390px;
+}
+/*********导航栏最右边工具**************/
+.toolsmenu{
+	display:inline-block;
+	float:right;
+	height:70px;
+	margin-right:30px;
+}
+.toolsmenu ul li{
+	display:inline-block;
+	float:left;
+	height:70px;
+	margin-left:20px;
+}
+.toolsmenu ul li a{
+	display:block;
+	margin-left:20px;
+	margin-top:35px;
+	color:#FFF;
+}
+.toolsmenu li a:hover{
+	color:#FC6;
+}
+.toolsmenu li#tools_1{
+	background:url(../images/main_link_ico.png) no-repeat left 34px; ;
+}
+.toolsmenu li#tools_2{
+	background:url(../images/main_link_ico.png) no-repeat left -116px; ;
+}
+.toolsmenu li#tools_3{
+	background:url(../images/main_link_ico.png) no-repeat left -16px; ;
+}
+.toolsmenu li#tools_4{
+	background:url(../images/help.png) no-repeat left 26px; 
+}
+.toolsmenu li#tools_5{
+	background:url(../images/main_link_ico.png) no-repeat left -66px; ;
+}
+/************左侧菜单栏开始*******************/
+.leftmenu{
+	position:absolute;
+	top:80px;
+	left:0px;
+	bottom:0;
+	width:200px;
+	background:#2C3544;	
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+.leftmenu_item dl dt{
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+	text-indent:20px;
+	height:30px;
+	line-height:30px;
+	background: RGB(44,47,56) url(../images/ico_small.png) right 12px no-repeat;
+}
+.leftmenu_item dl dd{
+	text-indent:30px;
+}
+.leftmenu_item dl dd li{
+	display:block;
+	line-height:30px;
+}
+.leftmenu_item dl dd li:hover{
+	padding-top:0;
+	padding-bottom:0;
+	color:RGB(0,155,235);
+}
+.leftmenu_item dl dd a{
+	display:block;
+	height:28px;
+	padding-top:1px;
+	padding-bottom:1px;
+	color:#FFF;
+}
+.leftmenu_item dl dd li a:hover{
+	color:RGB(0,155,235);
+	padding-top:0;
+	padding-bottom:0;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+}
+.leftmenu_item dl dd li a.onleftmenu{
+	background: #FC9 url(../images/ico_small.png) right -90px no-repeat;
+	padding-top:0;
+	padding-bottom:0;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	color:RGB(0,155,235);
+}
+
+
+/*************************z主体页面******************/
+.main_container{
+	position:absolute;
+	left:200px;
+	top:70px;
+	bottom:0;
+	right:0;
+	overflow:hidden;	
+}
+.main_content{
+	height:100%;
+	background:
+	padding: 7px 0 0 7px;
+}
+body.showleftmenu .main_container {
+    left: 200px;
+}
+body.hideleftmenu .main_container {
+    left: 0;
+}
+.main_content iframe{
+	width:100%;
+	height:100%;
+}
+
+
+
+
+
+
+
+
+
+
